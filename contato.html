@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Site</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <img src="/Imagens/logo-empresa.png" alt="Logo da empresa teste" width="200px">
+            <nav>
+                <ul>
+                    <il>
+                        <a href="inicio.html">
+                            Início
+                        </a>
+                    </il>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <il>
+                        <a href="contato.html">
+                            Contato
+                        </a>
+                    </il>
+                </ul>
+            </nav>
+        </section>
+
+    </header>
+<main>
+    <article>
+        <h1>Formulário de contato</h1>
+        <p>Preencha os dados abaixo e envie sua mensagem de contato</p>
+
+        <fieldset>
+            <legend>
+                <h5>Dados de contato</h5>
+            </legend>
+            <form id="frmInscricao" action="contato.php" method="post">
+                <label>Nome:</label><br>
+                <input type="text" required="required" id="textNome" maxlength="100" size="50"><br><br>
+                
+                <label>Sexo:</label><br>
+                <input type="radio" name="rdosexo" value="M" required="required">
+                <label>Masculino</label>
+                <br><br>
+                <input type="radio" name="rdosexo" value="F" required="required">
+                <label>Feminino</label>
+                <br><br>
+
+                <label>Endereço:</label><br>
+                <input type="text" required="required" id="textEndereco">
+
+                <br><br><label>Estado:</label><br>
+                <select id="cbxEstado" required="required">
+                    <option value="">-Selecione-</option>
+                    <option value="1">SC</option>
+                    <option value="2">RS</option>
+                </select><br><br>
+
+                <label>Cidade:</label><br>
+                <select id="cbxCidade" required="required">
+                    <option value="">-Selecione-</option>
+                    <option value="1">Blumenau</option>
+                    <option value="2">Passo Fundo</option>
+                </select><br><br>
+
+                <label>Celular:</label><br>
+                <input type="number" name="celular" id="texNumber" required="required" placeholder="Digite seu número">
+                <br><br>
+
+                <label>E-mail:</label><br>
+                <input type="email" required="required" size="50" id="textEmail">
+                <br><br>
+
+                <label>Área de interesse</label><br>
+                <input type="checkbox" name="chkAreasInteresse" value="JavaScript">
+                <label>JavaScript</label>
+                <input type="checkbox" name="chkAreasInteresse" value="HTML">
+                <label>HTML</label>
+                <input type="checkbox" name="chkAreasInteresse" value="CSS">
+                <label>CSS</label><br><br>
+
+            </form>
+        </fieldset>
+    </article>
+</main>    
+</body>
+</html>
